@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "pa-i-movie" #Must be unique in Heroku
+          heroku_email: "wilson.weng@oocl.com"
 
       - run: npm ci
 
