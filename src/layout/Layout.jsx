@@ -8,6 +8,7 @@ const Layout = () => {
       <nav>
         <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link>
+        <a href="http://www.w3school.com.cn">W3School</a>
       </nav>
       <div className="content">
         <Outlet />
